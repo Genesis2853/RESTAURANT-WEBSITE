@@ -1,0 +1,733 @@
+										/*HEADER*/
+*{
+	margin : 0px;
+	text-decoration: none;
+	font-family: verdana;
+}
+
+.header{
+	padding: 2px 10px 5px 5px;
+	background: #B16709;
+}
+
+.logo{
+	width: 100px;
+	height: 80px;                   /*Posicion absoluta para qe la imagen no estorbe*/
+	padding-top: 10px;
+}
+
+.div-espacio-nav{
+	padding: 30px 300px 10px 300px;
+	margin-top: 0px;
+}
+
+.inline{              								 /*Propiedad para convertir etiquetas en BLOQUE a INLINE*/
+	display: inline-block;
+}
+
+.nav-header{
+	position: absolute;
+	padding-top: 30px;
+	margin: 0px;
+}
+
+[class*="nav-h-"]{                                  			/*Aplicar a etiquetas con Clases con "nav-h-"*/
+	color : white;
+	padding: 5px 10px 5px 10px;
+	font-size: 18px;
+	border-bottom: 1px solid #f1c40f;
+}
+
+.boton-reserva{
+	padding: 10px;
+	margin-left: 45px;
+	border: 0px;
+	border-radius: 20px;
+	cursor: pointer;
+	font-size: 16px;
+	font-weight: bold;
+	background: #F7DC6F;
+	color: #884ea0;
+}
+
+
+													/*CUERPO*/
+.main{
+	padding: 0px 50px 0px 50px;
+	background: linear-gradient(to bottom, #B16709, #884ea0); 
+}
+
+.section-principal{
+	padding: 0px 0px 10px 0px;
+}
+
+.section-texto-bienvenida{
+	text-align: center;
+	font-size: 30px;
+	padding: 50px 200px 40px 200px;
+	background-image: url(fondo.png);
+	color: #FFF3BD;
+}
+
+[class*="boton-bienvenida"]{
+	padding: 10px;
+	margin-top: 45px;
+	border: 0px;
+	border-radius: 20px;
+	cursor: pointer;
+	background: #F7DC6F;
+	color: #884ea0;
+	font-size: 17px;
+}
+
+
+
+
+.section-texto-menu{
+	padding: 20px 0px 10px 0px;
+	background: #B16709;
+}
+
+.article-menu{
+	padding: 10px;
+	margin: 0px;
+}
+
+.article-menu-2{
+	padding: 1px:
+	position: relative;
+	bottom: 20px;
+	color: #f1c40f;
+}
+
+.parrafo-menu{
+	padding: 25px 25px 25px 25px;
+	font-size: 18px;
+	width: 800px;
+	color: white;
+}
+
+
+
+.section-texto-quienessomos{
+	padding: 30px 0px 20px 10px;
+	background: #B16709;
+}
+
+.subtitulo{
+	padding: 0px 0px 0px 15px;
+	color: #f1c40f;
+}
+
+
+.parrafo-quienesomos{
+	padding: 25px 25px 25px 25px;
+	font-size: 18px;
+	width: 800px;
+	color: white;
+}
+
+.img-2{												/*IMPORTANTE: posicion relative mas direccion a donde quieres que se mueva la imagen o parrefo*/
+	position: relative;
+	top: 5px;
+}
+
+[class*="boton-sec-"]{
+	padding: 10px;
+	border: 2px solid #9B5A08;
+	border-left: 0.5px solid #9B5A08;
+	border-top: 0.5px solid #9B5A08;
+	cursor: pointer;
+	font-size: 15px;
+	background: none;
+	color: #D0D3D4;
+}
+
+.boton-sec-menu{
+	margin: 0px 0px 0px 25px;
+}
+
+.boton-sec-quienessomos{
+	margin: 0px 0px 0px 25px;
+}
+
+
+
+.section-show-imagenes{
+	padding: 20px 20px 20px 20px;
+	background: #D0D3D4;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 1px;
+	color: black;
+}
+
+[class*="imagen-show-"]{
+	width: 155px;
+	height: 115px;
+	margin: 0px;
+	padding: 0px;
+}
+
+[class*="show-imagenes-texto-"]{
+	text-align: center;
+	position: relative;
+	top: 9px;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+[class*="div-show-imagenes"]{
+	display: grid;                /*con flex se coloco de lado, pero con grid se arreglo*/
+	align-items: center;
+	justify-content: center;
+}
+
+
+
+.section-show-imagenes, .section-texto-quienessomos, .section-texto-menu{
+	margin: 20px 0px 20px 0px;
+}
+
+
+
+.section-video-demostrativo{
+	padding: 20px 20px 20px 20px;
+	background: #F5B041;
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	color: black;
+}
+
+video{
+	margin-top: 5px;
+	margin-left: 300px;
+}
+
+.texto-video-demostrativo{
+	padding: 0px 20px 0px 20px;
+	font-size: 40px;
+	text-align: center;
+}
+
+														/*CONTACTO*/
+.section-contacto{
+	padding: 0px 0px 10px 0px;
+}
+
+.section-texto-contacto{
+	padding: 30px 30px 30px 30px;;
+	margin: 0px 0px 10px 0px;
+}
+
+.contacto-titulo-principal{
+	font-size: 50px;
+	text-align: center;
+	color: #f1c40f;
+	border: 2px dashed white;
+	padding: 10px 20px 10px 20px;
+	margin-bottom: 15px;
+}
+
+.div-contacto-titulo-principal{
+	align-items: center;
+	justify-content: center;
+	display: flex;
+}
+
+.article-contacto{
+	padding: 10px;
+	margin: 20px 0px 20px 0px;
+	background-color: #B16709;
+}
+
+.article-contacto-2{
+	margin-left: 30px;
+	padding: 1px;
+	bottom: 20px;
+	color: #f1c40f;
+}
+
+.iframe{
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	display: grid;
+}
+
+[class*="parrafo-contacto"]{
+	font-size: 18px;
+	color: white;
+}
+
+.parrafo-contacto-1{
+	padding: 25px 25px 25px 25px;
+}
+
+.parrafo-contacto-2{
+	padding: 10px 10px 10px 10px;
+}
+
+[class*="i-contacto"]{
+	font-size: 25px;
+}
+
+.i-contacto{
+	color: #283BFF;
+}
+.i-contacto-2{
+	color: #28F5FF;
+}
+.i-contacto-3{
+	color: #FF284C;
+}
+.i-contacto-4{
+	color: #FF8D28;
+}
+
+.fa-whatsapp{
+	color: #1FF132;
+	font-size: 25px;
+}
+
+.fa-envelope{
+	color: #FFFFFF;
+}
+
+.h2-rs{
+	margin-bottom: 10px;
+}
+															/*MENÚ*/
+       /*1 IMAGEN*/
+.section-titulo-menu{
+	padding: 30px 0px 40px 0px;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+}
+
+		/*2 BOTONES*/
+.section-nav-comida{
+	display: flex;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	gap: 20px;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+}
+
+[class*="boton-nav-comida"]{
+	width: 90px;
+	padding: 5px 8px 5px 8px;
+	background-color: #F5B041;
+	font-size: 17px;
+	border: 2px solid #E27A0C;
+	cursor: pointer;
+}
+
+     /*EFECTO BOTONES*/
+  /*BOTON 1 GENERAL PAGINA1*/
+.boton-nav-comida-GENERAL{
+	border: 3px inset #BC5B00;
+	background-color: #F7A31C;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+  /*BOTON 2 POSTRES PAGINA2*/
+.boton-nav-comida-POSTRES{
+	border: 3px inset #BC5B00;
+	background-color: #F7A31C;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+  /*BOTON 3 BEBIDAS PAGINA3*/
+.boton-nav-comida-BEBIDAS{
+	border: 3px inset #BC5B00;
+	background-color: #F7A31C;
+	font-weight: bold;
+	font-size: 16px;
+}
+  /*BOTON 4 BAR PAGINA4*/
+.boton-nav-comida-BAR{
+	border: 3px inset #BC5B00;
+	background-color: #F7A31C;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+
+		/*3 LADOS*/
+#section-menu-container{
+	margin-top: 40px;
+	display: flex;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 20px;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+}
+
+[class*="section-menu-lado"]{
+	background-color: #B16709;
+	padding: 5px 10px 5px 10px;
+	margin: 0px 10px 0px 10px;
+	width: 300px;
+}
+
+.p-titulo-comida{
+	margin: 20px 0px 20px 0px;
+	color: #FDDB00;
+}
+
+.conteiner-informacion-platos{
+	display: flex;
+	gap: 1px;
+	border: 2px dashed #C1700A;
+	padding: 2px 5px 2px 5px;
+	margin-bottom: 4px;
+}
+
+.conteiner-nombre-platos{
+	width: 260px;
+}
+
+.p-nombre-platos{
+	text-align: left;
+	color: #f1c40f;
+}
+
+.p-nombre-platos-ingredientes{
+	font-size: 13px;
+	text-align: left;
+	padding-left: 40px;
+	color: #FFF3BD;
+}
+
+.conteiner-platos-precio{
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	display: grid;
+	color: #72FF26;
+}
+
+															/*QUIENES SOMOS*/
+.section-titulo-QuienesSomos{
+	padding: 30px 0px 30px 0px;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+}
+
+.section-cuerpo-QuienesSomos{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 40px;
+	height: 700px;
+}
+
+.contenedor-section-mv{
+	display: grid;
+	grid-template-columns: 1fr;
+}
+
+.section-mision{
+	background-color: #B16709;
+	margin-bottom: 20px;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+}
+
+.section-vision{
+	background-color: #B16709;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+}
+
+.section-qs{
+	background-color: #B16709;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+}
+
+.contenedor-informacion-quienessomos{
+	padding: 10px;
+}
+
+.informacion-quienessomos-titulo{
+	color: #f1c40f;
+	font-size: 22px;
+}
+
+
+.informacion-quienessomos-texto{
+	padding: 0px 15px 0px 15px;
+	margin: 5px 0px 0px 0px;
+	border: 2px dashed #C1700A;
+	color: white;
+	font-size: 18px;
+	text-align: justify;
+	text-indent: 3%; /*para la sangria*/
+	line-height: 29px;  /*interlineado, normalmente está en 20px*/
+}
+														/*RESERVA FORMULARIO*/
+.contenedor-titulo-principal-reserva{
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 15px;
+}
+
+
+.section-reserva{
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	grid-template-columns: 1fr;
+	
+}
+
+#div-contenedor-formulario{
+	width: 500px;
+	padding: 20px 20px 20px 20px;
+	background: #F3A931;
+	border-radius: 20px;
+}
+
+.formulario{
+	display: grid;
+	justify-content: center;
+	align-items: center;	
+}
+
+[class*="formulario-bloque-"]{
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 5px;
+	border: 0px;
+	margin: 10px 10px 10px 10px;
+	color: #FFFFFF;
+}
+
+.reserva-oracion-indicacion{
+	margin-bottom: 10px;
+}
+
+.input-reserva{
+	padding: 3px 10px 3px 10px;
+	width: 300px;
+}
+
+
+.input-reserva-textarea, .input-reserva{
+	border: 2px solid #F7DC6F;
+	border-radius: 10px;
+}
+
+.input-reserva-textarea{
+	padding: 3px 10px 3px 10px;
+	height: 100px;
+	resize: none;
+}
+
+[class*="boton-reservacion-"]{
+	padding: 10px;
+	width: 100px;
+	background-color: #FFDCA3;
+	border: 2px solid #EA9408;
+	color: #EA9408;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+[class*="contenedor-boton-"]{
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	margin-top: 10px;
+}
+
+
+						/*input Checkbox*/
+
+input[type="checkbox"]{
+	display: none;
+}
+
+input[type="checkbox"] + label{
+	line-height: 2em;
+	cursor: pointer;
+}
+
+input[type="checkbox"] + label:before{
+	content: "";
+	width: 12px;
+	height: 12px;
+	float: left;
+	margin: 9px 10px 0px 0px;
+	border: 2px solid #F7DC6F;
+	background: #fff;
+}
+
+input[type="checkbox"]:checked + label:before{
+	border-color: #0fbf12;
+}
+
+input[type="checkbox"]:checked + label:after{
+	content: "";
+	border: 4px solid #0fbf12;
+	width: 5.5px;
+	height: 2px;
+	float: left;
+	margin-left: -1.45em;
+	border-right: 0;
+	border-top: 0;
+	margin-top: 0.82em;
+	transform: rotate(-55deg);
+}
+
+														/*PEDIR A DOMICILIO*/
+.contenedor-titulo-principal-pedirdomicilio{
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 15px;
+}
+
+
+.section-pedirdomicilio{
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	grid-template-columns: 1fr;
+	
+}
+
+#div-contenedor-formulario-pedirdomicilio{
+	width: 350px;
+	padding: 20px 20px 20px 20px;
+	background: #A0A2A3;
+	border-radius: 20px;
+}
+
+.formulario-pedirdomicilio{
+	display: grid;
+	justify-content: center;
+	align-items: center;	
+}
+
+[class*="formulario-pedirdomicilio-bloque-"]{
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 5px;
+	border: 0px;
+	margin: 10px 10px 10px 10px;
+	color: #FFFFFF;
+}
+
+.pedirdomicilio-oracion-indicacion{
+	margin-bottom: 10px;
+}
+
+.input-pedirdomicilio{
+	padding: 3px 10px 3px 10px;
+	width: 300px;
+	border: 2px solid #707172;
+	border-radius: 10px;
+}
+
+.contenedor-boton-pedirdomicilio{
+	text-align:center;
+	align-items: center;
+	justify-content: center;
+	margin-top: 10px;
+}
+
+.boton-pedirdomicilio{
+	padding: 10px;
+	width: 100px;
+	background-color: #DBDCDE;
+	border: 2px solid #595A5B;
+	color: #595A5B;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+													/*FOOTER*/
+.footer{
+	padding: 40px 80px 5px 80px;
+	background: #884ea0;
+}
+
+.div-espacio-nav-footer{
+	padding: 30px 100px 10px 100px;
+	margin-top: 0px;
+}
+
+[class*="nav-f-"]{
+	display: block;
+	color: #f1c40f;
+}
+
+.fa-circle{
+	padding: 0px;
+	font-size: 8px;
+	position: relative;
+	bottom: 4px;
+}
+
+.copyright{
+	margin: 40px 40px 5px 350px;
+	color: white;
+}
+
+#div-contenedor-footer-nav-padre{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 1px;
+}
+
+.div-contenedor-footer-nav-hijo{
+	padding: 0px 20px 0px 20px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 1px;
+}
+
+.div-seccion-reserva{
+	width: 250px;
+	text-align: center;
+}
+
+.boton-reserva-footer{
+	padding: 10px;
+	margin-left: 45px;
+	position: relative;
+	top: 20px;
+	right: 20px;border: 0px;
+	border-radius: 20px;
+	cursor: pointer;
+	font-size: 16px;
+	font-weight: bold;
+	background: #F7DC6F;
+	color: #884ea0;
+}
+
+.nav-footer-color{
+	color: white;
+	font-size: 18px;
+}
+
+.nav-footer, .nav-icono-footer{
+	margin: 5px 0px 0px 0px;
+}
+
+.i{
+	color: #f1c40f;
+}

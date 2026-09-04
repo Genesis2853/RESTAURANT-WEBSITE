@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<title>Restaurante</title>
+	<link rel="shortcut icon" href="logominiatura.png" type="image/x-icon">
+	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width-device-width, initial-scale=1.0">
+	<meta name="author" content="Genesis Borrego">
+	<meta name="description" content="hola, este es un mensaje">
+	<meta name="keywords" content="titulo, imagen, parrafo">
+	<meta name="robots" content="index">
+	
+	<link rel="stylesheet" href="style.css">
+	<script src="https://kit.fontawesome.com/f70862dfa6.js" crossorigin="anonymous"></script>
+	<script src="evento.js"></script>
+</head>
+<body>
+
+	<header class="header">
+		<img src="logo2.png" class="logo inline">
+		<div class="div-espacio-nav inline"></div>
+		
+		
+		<nav class="nav-header inline">
+		<a href="restaurante.html" class="nav-h-inicio">Inicio</a>
+		<a href="MENU.html" class="nav-h-menu">Menú</a>
+		<a href="QUIENESSOMOS.html" class="nav-h-somos">Quienes somos</a>
+		<a href="CONTACTO.html" class="nav-h-contacto">Contacto</a>
+		<a href="reserva.html"><button class="boton-reserva inline">Reservación</button></a>
+		</nav>
+		
+		 
+	</header>
+	
+	
+	<main class="main">
+	
+	<section class="section-principal">
+	
+		<section class="contenedor-titulo-principal-reserva">
+			<img src="reserva.png">
+		</section>
+		
+		
+		
+		<section class="section-reserva">
+		<div id="div-contenedor-formulario">
+		
+		<form name="" method="POST" class="formulario">
+	
+	
+		<fieldset class="formulario-bloque-1">
+		
+		<legend class="reserva-oracion-indicacion">Seleccione una Fecha, Hora y Número de comensales</legend>
+		
+		<label>Fecha</label>
+		<input type="date" class="input-reserva" name="FECHA_RESERVA" required>
+	
+		<label>Hora</label>
+		<input type="time" class="input-reserva" name="HORA_RESERVA" required>
+	
+		<label>Numero de comensales</label>
+		<select class="input-reserva" name="N°_COMENSALES" required>
+		<option value="no seleccionado"></option>
+		<option value="1">1</option>
+		<option value="2">2</option>
+		<option value="3">3</option>
+		<option value="4">4</option>
+		<option value="5">5</option>
+		<option value="6">6</option>
+		<option value="7">7</option>
+		</select>
+		
+		<div class="contenedor-boton-siguiente">
+		<button class="boton-reservacion-siguiente">Siguiente</button>
+		</div>
+		</fieldset>
+		
+		
+		<fieldset class="formulario-bloque-2">
+		
+		<legend class="reserva-oracion-indicacion">Introduzca los detalles</legend>
+		
+		<label>Nombre</label>
+		<input type="text" class="input-reserva" name="NOMBRE_CLIENTE" placeholder="Nombre..." required>
+		
+		<label>Apellido</label>
+		<input type="text" class="input-reserva" name="APELLIDO_CLIENTE" placeholder="Apellido..." required>
+		
+		<label>Correo Electrónico</label>
+		<input type="email" class="input-reserva" name="CORREO_CLIENTE" placeholder="Email..." required>
+		
+		<label>Número de Teléfono</label>
+		<input type="tel" class="input-reserva" name="TLF_CLIENTE" placeholder="04xx xxxxxxx" required>
+		
+		<label>Comentarios</label>
+		<textarea class="input-reserva-textarea" name="COMENTARIO_CLIENTE" cols="38" rows="18"  placeholder="Escriba su opinión..." required></textarea>
+		
+		<input type="checkbox" id="input-reserva-checkbox" name="ACEPTACION_TERMINOS" required>
+		<label for="input-reserva-checkbox" class="label-checkbox-input">Acepto los Términos y condiciones</label>
+		
+		
+		<div class="contenedor-boton-reservar">
+		<button type="submit" class="boton-reservacion-reservar">Reservar</button>
+		</div>
+		</fieldset>
+		
+		</form>
+		
+		<?php
+		include ("RESERVACION.php");
+
+		?>
+		</div>
+		</section>
+		
+		
+	</section>
+	
+	
+	</main>
+	<footer class="footer">
+		<div id="div-contenedor-footer-nav-padre">
+		<img src="logotrnsparente.png">
+		
+		<div class="div-contenedor-footer-nav-hijo">
+		
+		<div class="div-seccion-iconos">
+		<article class="nav-footer-color">Síguenos</article>
+		<nav class="nav-icono-footer inline">
+		<a href="#" class="nav-icono-" title="RestaurantFood">
+			<i class="fa-brands fa-facebook i"></i>
+		</a>
+		<a href="#" class="nav-icono" title="RestaurantFood">
+			<i class="fa-brands fa-twitter i"></i>
+		</a>
+		<a href="#" class="nav-icono" title="RestaurantFood">
+			<i class="fa-brands fa-tiktok i"></i>
+		</a>
+		<a href="#" class="nav-icono" title="RestaurantFood_Oficial">
+			<i class="fa-brands fa-instagram i"></i>
+		</a>
+		</nav>
+		</div>
+		
+		
+		<div class="div-seccion-navegacion">
+		<article class="nav-footer-color">Sigue navegando</article>
+		<nav class="nav-footer inline">
+		<a href="restaurante.html" class="nav-f-inicio">
+		<i class="fa-solid fa-circle"></i>
+		Inicio</a>
+		<a href="MENU.html" class="nav-f-menu">
+		<i class="fa-solid fa-circle"></i>
+		Menú</a>
+		<a href="QUIENESSOMOS.html" class="nav-f-somos">
+		<i class="fa-solid fa-circle"></i>
+		Quienes somos</a>
+		<a href="CONTACTO.html" class="nav-f-contacto">
+		<i class="fa-solid fa-circle"></i>
+		Contacto</a>
+		</nav>
+		</div>
+		
+		
+		<div class="div-seccion-reserva">
+		<article class="nav-footer-color">¿Quieres reservar una mesa? <br>¡Hazlo ahora!</article>
+		<a href="reserva.html"><button class="boton-reserva-footer">Reservación</button></a>
+		</div>
+		</div>
+		</div>
+		
+		<div class="copyright">
+		Copyright
+		<i class="fa-regular fa-copyright"></i>
+		2024 Restaurante Food - 
+		Todos los derechos reservados.
+		</div>
+	</footer>
+
+
+</body>
+
+</html>
